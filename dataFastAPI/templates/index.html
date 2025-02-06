@@ -1,10 +1,35 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Калькулятор</title>
+    <link rel="stylesheet" href="/static/style.css">
 </head>
 <body>
-$END$
+    <div class="container">
+        <h1>Вычислить сумму двух чисел</h1>
+        <form action="/calculate" method="post" id="calc-form">
+            <label for="num1">Первое число:</label>
+            <input type="number" id="num1" name="num1" required>
+
+            <label for="num2">Второе число:</label>
+            <input type="number" id="num2" name="num2" required>
+
+            <button type="submit">Вычислить</button>
+        </form>
+    </div>
+ <div class="container">
+    <h1>Вычислить разность двух чисел</h1>
+    <form action="/subtract" method="post" id="calc-form-subtraction">
+        <label for="num1subtraction">Первое число:</label>
+        <input type="number" id="num1subtraction" name="num1" required>
+
+        <label for="num2subtraction">Второе число:</label>
+        <input type="number" id="num2subtraction" name="num2" required>
+
+        <button type="submit">Вычислить</button>
+    </form>
+</div>
 </body>
 </html>
